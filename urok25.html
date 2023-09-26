@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 25</title>
+    <style>
+        .blocks{
+            width: 200px;
+            height: 200px;
+        }
+        .block-1{
+            background-color: red;
+        }
+        .block-2{
+            background-color: blue;
+        }
+
+        .active{
+            background-color: purple;
+        }
+        .border{
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blocks block-1" id="block-1"></div>
+    <div class="blocks block-2" id="block-2"></div>
+
+    
+
+
+<script>
+
+    let block1 = document.getElementById('block-1')
+    let block2 = document.getElementById('block-2')
+
+    block1.onclick = color
+    block2.onclick = color
+
+
+    block1.addEventListener('click', border)
+    block2.addEventListener('dblclick', border)
+
+
+    function color(){
+        this.classList.toggle('active')
+    }
+
+    function border(){
+        this.style.borderRadius = '100px'
+    }
+
+    
+
+
+
+
+
+
+
+
+    //children 
+    //firstChild, 
+    //lastChild 
+    //previousSibling, 
+    //nextSibling 
+    //parentNode
+
+    //firstElementChild, 
+    //lastElementChild
+    //previousElementSibling, 
+    //nextElementSibling
+
+    //let ul = document.getElementById('ul');
+
+    //let li1 = document.querySelector('.li');
+
+    //let li = document.createElement('li');
+
+    //li.innerText = 'Elem423'
+
+    //ul.append(li)
+    //ul.append(li)
+
+    //ul.append('LoremApp')
+    //ul.before('LoremBef')
+    //ul.prepend('LoremPrep')
+    //ul.after('LoremAfter')
+
+
+    //ul.classList.add('style')
+    //ul.classList.remove('style')
+    //ul.classList.contains('style')
+    //ul.classList.toggle('style')
+
+
+
+    //li.style.backgroundColor = 'red'
+    //li.style.fontSize = '32px'
+
+    //console.log(ul.classList.contains('style'))
+
+</script>
+
+</body>
+</html>
